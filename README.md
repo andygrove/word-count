@@ -21,7 +21,7 @@ nothing=69960
 
 # Currently Implemented
 
-- Java 8
+- Java 8 (Idiomatic, Optimized, and Parallel versions)
 
 # Planned (Pure languages)
 

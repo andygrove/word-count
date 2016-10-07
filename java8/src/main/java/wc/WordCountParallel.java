@@ -52,7 +52,9 @@ public class WordCountParallel {
 
         // wait for workers to complete
         exec.shutdown();
-        exec.awaitTermination(30, TimeUnit.SECONDS);
+        if (!exec.awaitTermination(30, TimeUnit.SECONDS)) {
+          throw new RuntimeException("Timed out");
+        }
 
         // show top N words
         map.entrySet().stream()
