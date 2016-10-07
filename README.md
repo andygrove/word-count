@@ -32,7 +32,7 @@ nothing=69960
 - Go
 - Scala
 
-# Planned (Databases / Data processing frameworks)
+# Planned (Big Data Frameworks)
 
 - Java 8 + Spark 2.0
 - Scala + spark 2.0
