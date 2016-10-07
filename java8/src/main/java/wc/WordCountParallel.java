@@ -3,14 +3,11 @@ package wc;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static wc.WordCountParallel.MIN_WORD_SIZE;
-import static wc.WordCountParallel.POISON_PILL;
-import static wc.WordCountParallel.map;
+import static wc.WordCountParallel.*;
 
 public class WordCountParallel {
 
