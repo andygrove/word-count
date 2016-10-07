@@ -36,4 +36,3 @@ nothing=69960
 
 - Java 8 + Spark 2.0
 - Scala + spark 2.0
-- MySQL
