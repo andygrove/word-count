@@ -12,15 +12,18 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import static java.lang.System.in;
 
-public class Main {
+public class WordCountOptimized {
 
   static final int MIN_WORD_SIZE = 6;
 
   static final ConcurrentMap<String,AtomicInteger> map = new ConcurrentHashMap<>();
 
   public static void main(String[] args) throws Exception {
+
+    String filename = "/Users/andy/Documents//shakespeare.txt";
+
     long t1 = System.currentTimeMillis();
-    try (FileReader fr = new FileReader("/Users/andy/Documents//shakespeare.txt")) {
+    try (FileReader fr = new FileReader(filename)) {
       try (BufferedReader r = new BufferedReader(fr, 64*1024)) {
         String line;
         StringBuilder word = new StringBuilder(1024);
